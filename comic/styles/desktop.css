@@ -1,0 +1,29 @@
+body {
+	min-width: 1000px;
+}
+h1 {
+	width: 500px;
+}
+#main-list {
+	width: 1000px;
+	margin: 0 auto;
+}
+.container {
+	width: 999px;
+	margin: 40px auto;
+}
+.drawer.wide {
+	width: 456px;
+}
+.drawer.small {
+	width: 218px;
+}
+.drawer.mid {
+	width: 100%;
+}
+.drawer.left {
+	margin-right: 20px;
+}
+.drawer.right {
+	margin-left: 20px;
+}
