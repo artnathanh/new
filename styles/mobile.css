@@ -1,0 +1,39 @@
+h1 {
+	max-width: 400px;
+}
+#header {
+	background-size: 500px;
+	min-height: 250px;
+
+}
+#main-list {
+	width: 100%;
+	margin: 0;
+	padding-top: 100px;
+}
+.container {
+	width: 100%;
+	margin: 40px 0;
+}
+.drawer.wide {
+	max-width: 892px;
+	width: 100%;
+}
+.drawer.mid {
+	max-width: 892px;
+	width: 90%;
+}
+.drawer.small {
+	width: 45%;
+}
+.drawer h1 {
+	max-width: 100%;
+}
+.desc {
+	text-indent: 40px;
+		font-size: 0.9em;
+		text-align: left;
+}
+	h3 {
+		font-size: 1em;
+}
