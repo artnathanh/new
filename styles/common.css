@@ -223,7 +223,10 @@ a:hover {
 		padding-top: 0px !important;
 		margin:0px auto 0px auto !important;
 }
-
+.c {
+	padding: 5px;
+	display: block;
+}
 .g {
 	margin: 0 auto;
 	display: flex;
