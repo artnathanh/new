@@ -1,0 +1,206 @@
+
+/* Center an Image- the 50% places it in the middle no matte the size */
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:wght@300;600&display=swap');
+#logo {
+  background-color: white;
+  background-image: url(https://hartleyarts.com/CoffeeHouse576/Images/LogoBig.svg);
+  background-size: 900px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  min-height: 150px;
+}
+#header {
+
+}
+#navigation {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  font-family: "Arvo";
+  font-weight: 700;
+}
+#navigation li {
+  background: #231F20;
+  flex-grow: 1;
+  color: #d8d8d8;
+  text-align: center;
+  padding: 15px 0;
+  font-weight: 500;
+  font-size: 2em;
+}
+#Contact {
+  margin-bottom: 0px;
+}
+
+.labels {
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.labels p {
+  font-size: 30px;
+  font-weight: 600;
+  color: #231F20;
+}
+.labels h3 {
+  color: #231F20;
+}
+.banner {
+  background-color: red;
+  padding: 0px;
+  width: 100%;
+  object-fit: scale-down;
+}
+.banner img {
+  width: 100%
+}
+.container {
+  background-color: #231F20;
+  padding-bottom: 15px;
+}
+.title {
+  margin-top: 0;
+  padding-top: 50px;
+}
+.center {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid medium #189B8D
+  }
+.something {
+  display: flex;
+  padding-top: 25px;
+}
+.form {
+  text-align: center;
+  margin-bottom: 0;
+}
+.contact {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+/* This effects the styling of the overall body Element */
+body {
+
+    background-color: white;
+    margin: 0;
+}
+/* MainHeader Funky Font for the h1 tag */
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    font-family: "Arvo";
+    font-weight: 400;
+  	padding: 1px 20px 1px 50px;
+    font-size: 40px;
+    letter-spacing: 1px;
+    color: #189B8D;
+    margin: 0 auto 0 auto;
+}
+/* Font for the h2 tag */
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+	  font-family: 'Arvo';
+    font-weight: 400;
+    padding: 0px;
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: #189B8D
+}
+h3 {
+    text-transform: uppercase;
+    text-align: center;
+	  font-family: 'Arvo', serif;
+    font-weight: 400;
+    padding: 0px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #ffffff
+}
+h4 {
+    text-transform: uppercase;
+    text-align: center;
+	  font-family: 'Arvo', serif;
+    font-weight: 400;
+    padding: 0px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #231F20;
+    margin-top: 10px;
+}
+/* Font for the p tag */
+p {
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+  font-weight: 100;
+  font-style: bold;
+	font-size: 20px;
+  padding: 1px;
+	line-height:  normal;
+  margin-left: 50px;
+  margin-right: 50px;
+  color: white;
+}
+label {
+  	font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color: #231F20;
+}
+input, select, textarea {
+  width: 25%;
+  padding: 5px;
+  border: 1px solid #231F20;
+  border-radius: 2px;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: #189B8D;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #F9A208;
+}
+/* Universal Link styling */
+/* unvisited link */
+a:link {
+ color: #189B8D;
+}
+/* visited link */
+a:visited {
+ color: #189B8D;
+}
+/* mouse over link */
+a:hover {
+ color: #F9A208;
+}
+/* selected link */
+a:active {
+ color: #F7CB7F;
+}
+.imghover {
+transition: 3s;
+}
+.imghover:hover {
+transition: 3s;
+transform:scale(0) rotate(1080deg);
+/* transform:scale(100) rotate(10000deg); */
+
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
