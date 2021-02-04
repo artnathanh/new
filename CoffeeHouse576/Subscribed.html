@@ -2,9 +2,50 @@
 	<head>
         <link rel='icon' href='Images/favicon.ico'/ >
 		<title>Coffee House 576</title>
+		<style>
+		.lol{
+                animation: blinkingText 2s infinite, lmAO 30s infinite;
+								transform-origin: top left;
+
+            }
+
+            @keyframes blinkingText{
+                0%{     color: #00ff26;  }
+                50%{    color: #0062ff;  }
+                100%{   color: #00ff26;  }
+            }
+						@keyframes lmAO {
+							0%{transform: translate(0%,0%) scale(1) skew(0deg,0deg);}
+							25%{transform: translate(75%,700%) scale(5) rotate(180deg) skew(30deg,20deg);}
+							50%{transform: translate(-100%,90%) scale(5) rotate(360deg) skew(90deg,70deg);}
+							75%{transform: translate(75%,700%) scale(5) rotate(180deg) skew(30deg,20deg);}
+							100%{transform: translate(0%,0%) scale(1) skew(0deg,0deg);}
+
+
+						}
+						body {
+							background-color: #231F20;
+							width: 100%;
+						}
+
+						.pointless {
+							 width: 800px;
+							 float: right;
+						}
+		</style>
+
 	</head>
 	<body>
+
+		<div class="lol">
       <h1>Epic</h1>
 			<h3><a href="index.html"/>Home</h3>
+		</div>
+		<div class="pointless">
+		<img class="pointless" src="https://hartleyarts.com/CoffeeHouse576/Images/JoeBiden.jfif">
+		<audio controls autoplay volume="0.5">
+		  <source src="https://vgmsite.com/soundtracks/super-smash-bros.-ultimate-vol.-26-final-fantasy/pusmgfmaxx/1-10%20One-Winged%20Angel.mp3" type="audio/mpeg">
+		</audio>
+	</div>
 	</body>
-</html
+</html>
