@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+@keyframes sidebar {
+  0%{ transform: translate(-500px);}
+  100%{ transform: translate(0px);}
+}
+@font-face {
+  font-family: 'Game Freak Font';
+  src: URL('font/game-freak-font.ttf') format('truetype');
+}
+body {
+  font-family: "Monsterrat", sans-serif;
+  weight: 300;
+  background-color: #0C0C0C;
+  color: #ffff;
+  width: 100%;
+  overflow-x: hidden;
+}
+p {
+  font-family: "Monsterrat", sans-serif;
+  font-weight: 300;
+ }
+h1 {
+  font-family: "IBM Plex Sans", sans-serif !important;
+  font-weight: 700;
+  font-size: 2.5em;
+ }
+h2 {
+  font-family: "IBM Plex Sans";
+  font-weight: 700;
+  font-size: 2em;
+ }
+h3 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1.25em;
+ }
+h4 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+ }
+h5 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 300;
+  font-size: 0.5em;
+  text-rendering:geometricPrecision;
+ }
+ul {
+  list-style: none;
+  padding-left: 0;
+ }
+button {
+  cursor: pointer;
+ }
+#main {
+  transition: .3s;
+  padding-top: 1%;
+}
+#color1 {
+  background-image: url(../images/Strip3.png);
+}
+#color2 {
+  background-image: url(../images/Strip4.png);
+}
+#color3 {
+  background-image: url(../images/Strip5.png);
+}
+#color4 {
+  background-image: url(../images/Strip6.png);
+}
+#color5 {
+  background-image: url(../images/Strip7.png);
+}
+#color6 {
+  background-image: url(../images/Strip8.png);
+}
+#color7 {
+  background-image: url(../images/Strip9.png);
+}
+#color8 {
+  background-image: url(../images/Strip10.png);
+}
+#color9 {
+  background-image: url(../images/Strip11.png);
+}
+#color10 {
+  background-image: url(../images/Strip12.png);
+}
+#color11 {
+  background-image: url(../images/Strip13.png);
+}
+#color12 {
+  background-image: url(../images/Strip14.png);
+}
+#color13 {
+  background-image: url(../images/Strip15.png);
+}
+#color14 {
+  background-image: url(../images/Strip16.png);
+}
+.Game {
+  font-family: 'Game Freak Font';
+  font-size: 250% !important;
+  letter-spacing: 10px;
+  margin-bottom: -40px;
+}
+.Game2 {
+  font-family: 'Game Freak Font';
+  font-size: 500% !important;
+  letter-spacing: 25px;
+}
+.header{
+  margin-left: 10%;
+}
+.LogoType {
+  width: 600px;
+  margin: -35px 10% 0;
+  image-rendering: pixelated;
+}
+ .sidebar {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 0; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  top: 0; /* Stay at the top */
+  left: 0;
+  z-index: 3;
+  background-color: #080808; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 18px;
+  transition: all 0.3s ease 0s;
+ }
+ /* .sidebar show {
+   width: 100%;
+ } */
+ .sidebar a {
+  color: #818181;
+  text-decoration: none;
+ }
+ .sidebar a:hover {
+  color: #fff;
+ }
+ .sidebar ul {
+  overflow-x: hidden;
+  width: 300px;
+ }
+ .sidebar li {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 16px 8px 8px 32px ;
+  display: block;
+ }
+ .sideIcon {
+  width: 70%;
+  image-rendering: pixelated;
+  padding-left: 25px;
+ }
+ .sidebar .current {
+  color: #fff;
+  background-image: url(../images/Strip2.png);
+  background-position: center;
+  background-repeat: repeat;
+  background-size:cover;
+  image-rendering: pixelated;
+ }
+ .sidenav a:hover, .offcanvas a:focus{
+  color: #f1f1f1;
+ }
+ .sideContainer {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 60px; /* Set the width of the sidebar */
+  z-index: 1; /* Stay on top */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #080808; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  transition: all 0.3s ease 0s;
+  margin-right: 2%;
+ }
+ .container {
+  cursor: pointer;
+  position: fixed;
+  z-index: 5;
+}
+.bar1, .bar2  {
+  width: 25px;
+  height: 2.5px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: .3s;
+  margin-left: 15px;
+}
+.bar1 {
+  transform: rotate(18deg);
+}
+.bar2 {
+  transform: rotate(-18deg);
+}
+.change .bar1 {
+  -webkit-transform: rotate(162deg);
+  transform: rotate(162deg);
+}
+.change .bar2 {
+  -webkit-transform:  rotate(198deg)  ;
+  transform: rotate(198deg);
+}
+ .openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #0C0C0C;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.mySlides {
+  height: 65%;
+  transition: opacity 1.5s;
+  position: absolute;
+}
+.slideshow {
+  width: 100%;
+  display: block;
+}
+.button {
+  z-index: 100;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  color: black;
+  padding: 15px 16px;
+  margin-left: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+.button:hover {
+  background-color: rgba(8,8,8,1);
+  color: white;
+}
+.homeSection {
+  height: 375px;
+  margin: 0px 0 125px 0px;
+}
+.homeSectionMain {
+  height: 550px;
+  margin: 0px 0 75px 0px;
+}
+.banner {
+  position: absolute;
+  width: 80%;
+  height: 525px;
+}
+.bottomLeft {
+  width: 70%;
+  position: absolute;
+  bottom: 0;
+}
+.homeContainer {
+  width: 100%;
+  margin-left: 10%;
+  padding-bottom: 100px;
+}
+.homeContainer h2 {
+  padding-bottom: 20px;
+}
+.strip {
+  background-image: url(../images/Strip10.png);
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  image-rendering: pixelated;
+  padding-top: 200px;
+  padding-left: 10%;
+  margin-left: -10% !important;
+  margin-top: -400px;
+}
+.banner h2 {
+  margin-bottom: 75px;
+  font-size: 3.5em;
+  z-index: 1;
+  margin-left: 10%;
+  width: 100%;
+}
+.banner h3 {
+  background: linear-gradient( to right, rgba(8,8,8,1), rgba(0,0,0,0));
+  margin: 0 0 20 50;
+  padding: 100 10% 20 20%;
+  margin-left: -10%;
+  width: 100%;
+}
+.previewDisplay table {
+  width: 80%;
+}
+.previewDisplay td{
+  padding: 0 5px 5px 0;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.75em;
+}
+.previewDisplay .imgContainer img{
+  width: 100%;
+  float: none !important;
+  border-radius: 0 !important;
+}
+.previewDisplay .imgContainer {
+  margin-left: 0 !important;
+  width: 100%;
+}
+
+.previewDisplay .middle {
+  width: 75%
+  margin: 0x 0px !important;
+}
+.titleBG {
+  width: 100%;
+  position: absolute;
+  background-color: red;
+}
+.bioContainer {
+  width: 100%;
+  float: right;
+}
+.bioContainer h1 {
+  margin-left: 10%;
+  font-size: 3.5em;
+}
+.bioContainer h2 {
+  font-size: 3.5em;
+  margin-bottom: 0;
+}
+
+.location {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  float: right;
+}
+.image {
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+}
+.imgContainer {
+  float: left;
+  border-radius: 20%;
+  margin-left: 11%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imgContainer:hover .image {
+  opacity: 0.3;
+}
+.imgContainer:hover .middle {
+  opacity: 1;
+}
+.text {
+}
+.bio img {
+  width: 300px;
+  border-radius: 20%;
+  border: solid #0C0C0C medium;
+  filter: drop-shadow(0 10px 5px #0C0C0C);
+}
+.bio {
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+  margin-top: 50px;
+  margin-bottom: -25px;
+  background-image: url(../images/Strip.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  image-rendering: pixelated;
+  padding: 100px 0;
+}
+.bio p, .bio h2, .bio h3 {
+  margin: 0 15% 0 25;
+}
+.bio p {
+  text-align: justify;
+  margin-top: 10px;
+}
+.bio h2 {
+}
+.bio h3 {
+  font-weight: 400;
+  font-style: italic;
+}
+.bioText {
+  width: 1500px;
+  display:block;
+  padding-bottom: 25px;
+}
+.age {
+  display: inline-flex;
+  padding-left: 10px;
+  vertical-align:middle;
+}
+.age td {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500 !important;
+  font-size: 15px;
+  line-height: 16px;
+}
+.twitter {
+  width: 100%;
+}
+.twitter table {
+  width: 80%;
+}
+.twitter td{
+  width: 33%;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.75em;
+}
+.videoPlayer {
+}
+.videoPlayer iframe {
+  width: 77%;
+  height: 65%;
+  margin-left: 10% ;
+}
+.videoTitle {
+  margin-top: 10px;
+}
+.videoDesc {
+  width: 65%;
+  padding-bottom: 100px;
+}
+.material-icons {
+  font-size: 18px !important;
+  padding-left: 18px;
+  padding-right: 3px;
+}
+.fab {
+  font-size: 35px !important;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 4px;
+}
+.fas {
+  font-size: 35px !important;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 4px;
+}
+.fa-twitter {
+  color: #1C9EED;
+  font-size: 1000px;
+}
+.fa-twitch {
+  color: #9448FF;
+}
+.fa-youtube {
+  color: #FE0000;
+}
+.fa-instagram {
+  color: #fff;
+}
+.fa-play {
+  color: #fff;
+}
