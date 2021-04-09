@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html>
   <head>
     <meta charset="utf-8">
@@ -24,10 +26,7 @@
         <li>
           <a href="videos.html">Videos</a>
         </li>
-        <li>
-          <a href="content.html">Other Content</a>
-        </li>
-        <li class="current">Ask Us Anything</a>
+        <li class="current">Comments</a>
         </li>
         <li>
           <a href="merch.html">Merch</a>
@@ -44,10 +43,48 @@
       </div>
     </div>
 
-      <div class="header">
+      <header>
         <h3 class="Game">ASK US</h3>
           <h2 class="Game2">ANYTHING</h2>
-      </div>
-
+      </header>
+      <section>
+        <form class="" action="script.html" method="post">
+          <table class="comments">
+            <tr>
+              <td style="label">Name</td>
+              <td><input class="formbox" type="text" name="gamername"value=""></td>
+            </tr>
+            <tr>
+              <td style="label">Email</td>
+              <td><input class="formbox" type="text" name="gameremail"value=""></td>
+            </tr>
+            <tr>
+              <td style="label">Comment</td>
+              <td><textarea columns="50" rows="5" name="comment"></textarea></td>
+            </tr>
+            <tr>
+              <td style="label">Rating</td>
+              <td><select name="rating">
+                 <option value="5">*****</option>
+                 <option value="5">****</option>
+                 <option value="5">***</option>
+                 <option value="5">**</option>
+                 <option value="5">*</option>
+               </select>
+              </td>
+            </tr>
+            <tr>
+              <td style="label">Contact?</td>
+              <td>
+                Yes<input type="radio" name="contact" value="yes" checked>
+                No<input type="radio" name="contact" value="no">
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2"> <input class="form button" type="submit" value="Submit"></td>
+            </tr>
+          </table>
+        </form>
+      </section>
   </body>
 </html>

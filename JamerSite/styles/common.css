@@ -10,6 +10,8 @@
 body {
   font-family: "Monsterrat", sans-serif;
   weight: 300;
+  margin: 0;
+  height: 100%;
   background-color: #0C0C0C;
   color: #ffff;
   width: 100%;
@@ -51,6 +53,12 @@ ul {
  }
 button {
   cursor: pointer;
+ }
+ footer {
+   height:  50px;
+    width: 100%;
+    color: #fff;
+    background-color: #fff;
  }
 #main {
   transition: .3s;
@@ -109,9 +117,7 @@ button {
   font-size: 500% !important;
   letter-spacing: 25px;
 }
-.header{
-  margin-left: 10%;
-}
+
 .LogoType {
   width: 600px;
   margin: -35px 10% 0;
@@ -198,6 +204,10 @@ button {
 .bar2 {
   transform: rotate(-18deg);
 }
+.change {
+  margin-left: 15px;
+  margin-top: 10px;
+}
 .change .bar1 {
   -webkit-transform: rotate(162deg);
   transform: rotate(162deg);
@@ -222,14 +232,15 @@ button {
   margin-left: 50px;
 }
 .mySlides {
-  height: 65%;
   transition: opacity 1.5s;
   position: absolute;
+  min-width: 100%;
+  max-height: 70%;
+align-content: flex-end;
+  object-fit: cover;
+
 }
-.slideshow {
-  width: 100%;
-  display: block;
-}
+
 .button {
   z-index: 100;
   background-color: white;
@@ -246,32 +257,49 @@ button {
   background-color: rgba(8,8,8,1);
   color: white;
 }
-.homeSection {
-  height: 375px;
-  margin: 0px 0 125px 0px;
+section {
+  height: 5%;
+  margin: 50px 0 0px 0px;
+    margin-left: 10%;
+}
+header{
+  margin-left: 10%;
+}
+footer .button {
+  float: right;
+  margin-right: 10%;
+  border-radius: 0;
 }
 .homeSectionMain {
   height: 550px;
-  margin: 0px 0 75px 0px;
-}
-.banner {
-  position: absolute;
-  width: 80%;
-  height: 525px;
-}
-.bottomLeft {
-  width: 70%;
-  position: absolute;
-  bottom: 0;
+  width: 100%;
+  margin: 0px 0 115px 0px;
+  display: flex;
+  overflow: hidden;
+align-items: center;
+
 }
 .homeContainer {
   width: 100%;
-  margin-left: 10%;
-  padding-bottom: 100px;
+
 }
 .homeContainer h2 {
   padding-bottom: 20px;
 }
+.columns  {
+  column-count: 4;
+  width: 60%;
+
+}
+.columns h2 {
+  font-size: 1.5em;
+  margin: -15px 0 0 0;
+  padding-bottom: 5px;
+  column-span: all;
+
+}
+
+
 .strip {
   background-image: url(../images/Strip10.png);
   height: 400px;
@@ -284,20 +312,28 @@ button {
   margin-left: -10% !important;
   margin-top: -400px;
 }
-.banner h2 {
-  margin-bottom: 75px;
-  font-size: 3.5em;
+.bottomLeft {
+  width: 70%;
+  bottom: 0;
+  height: inherit;
+
+}
+.banner {
   z-index: 1;
-  margin-left: 10%;
-  width: 100%;
-}
-.banner h3 {
   background: linear-gradient( to right, rgba(8,8,8,1), rgba(0,0,0,0));
-  margin: 0 0 20 50;
-  padding: 100 10% 20 20%;
-  margin-left: -10%;
+  align-self: flex-end;
   width: 100%;
+  padding: 20px;
+  padding-left: 10%;
+
 }
+.banner h2 {
+  font-size: 3.5em;
+  margin: 20px 0;
+
+
+}
+
 .previewDisplay table {
   width: 80%;
 }
@@ -349,6 +385,16 @@ button {
   opacity: 1;
   transition: .5s ease;
   backface-visibility: hidden;
+  margin: 0 0 15px 0;
+}
+.homeContainer td {
+  padding: 0 15px ;
+}
+.homeContainer h5 {
+  margin: 0;
+}
+.spacer {
+  margin-bottom: 20%;
 }
 .middle {
   transition: .5s ease;
@@ -359,6 +405,7 @@ button {
   float: left;
   border-radius: 20%;
   margin-left: 11%;
+  margin-right: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -402,11 +449,26 @@ button {
 .bio h3 {
   font-weight: 400;
   font-style: italic;
+  margin: 0 0;
 }
 .bioText {
   width: 1500px;
   display:block;
-  padding-bottom: 25px;
+  padding-bottom: 0px;
+  margin-right: 5%;
+}
+.form {
+  width: 100%;
+  margin-top: 10px;
+}
+.formbox {
+  width: 100%;
+}
+.label {
+text-align: right;
+}
+.comments {
+  width: 50%;
 }
 .age {
   display: inline-flex;
@@ -444,6 +506,27 @@ button {
 .videoDesc {
   width: 65%;
   padding-bottom: 100px;
+}
+td img {
+  width: 200px;
+  margin: 10px 20px -20px;
+}
+.merch  {
+  width: 75%;
+  display: block;
+  margin-top: -10px;
+}
+.store {
+    float: left;
+    width: 35%;
+    padding: 0px 0px 0 10px;
+    margin-right: -40px;
+}
+.store2 {
+    float:right;
+    text-align: right;
+    width: 20%;
+    padding: 1px 20px 0 40px;
 }
 .material-icons {
   font-size: 18px !important;
