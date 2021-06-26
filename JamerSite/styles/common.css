@@ -287,8 +287,8 @@ align-items: center;
   padding-bottom: 20px;
 }
 .columns  {
-  column-count: 4;
-  width: 60%;
+  column-count: 1;
+  width: 80%;
 
 }
 .columns h2 {
