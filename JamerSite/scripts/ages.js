@@ -1,4 +1,4 @@
-document.getElementById("nathan").innerHTML = getAge("2000-12-02");
+document.getElementById("kaitlyn").innerHTML = getAge("2000-12-02");
 document.getElementById("alex").innerHTML = getAge("1994-02-08");
 document.getElementById("umar").innerHTML = getAge("1995-11-12");
 document.getElementById("scott").innerHTML = getAge("1999-11-30");
